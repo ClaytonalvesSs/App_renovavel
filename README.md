@@ -1,5 +1,5 @@
 # App_renovavel
-##Repositório com arquivo do app sobre energia renovável e pokémon
+## Repositório com arquivo do app sobre energia renovável e pokémon
 
 Nova dupla: Clayton Alves e Evelyn Karina
 
