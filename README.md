@@ -17,7 +17,8 @@ As outras 4 activities irão apresentar informações sobre a energia que você 
 
 Assim que você escolher a energia, você será direcionado a outra activity, onde nela vai mostrar informações sobre a energia escolhida, onde utilizamos TextView para apresentar as informações e ImageView para colocar a imagem da fonte de energia, o pokemon representado e o "rank" de cada energia (como se fosse uma nota), e também terá um ImageButton que tem a função de te levar de volta ao menu inicial.
 
-Atualizações:
+# Atualizações:
+
 Mudança na dupla, a partir de agora, as pessoas que darão continuidade ao app será Clayton Alves e Evelyn Karina.
 
 Após uma breve discussão, pensamos em adicionar tais elementos ao nosso aplicativo.
