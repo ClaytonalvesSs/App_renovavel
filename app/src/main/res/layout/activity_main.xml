@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pokefundo"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imgvhome1"
+        android:layout_width="411dp"
+        android:layout_height="157dp"
+        android:layout_marginBottom="557dp"
+        android:contentDescription="@string/barra_para_nome_e_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <ImageButton
+        android:id="@+id/btnsolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#E91B21"
+        android:contentDescription="@string/solar"
+        android:onClick="janelasolar"
+        app:layout_constraintBottom_toTopOf="@+id/btneolica"
+        app:layout_constraintEnd_toStartOf="@+id/btnoceanica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvhome1"
+        app:srcCompat="@drawable/energia_dosol_btn" />
+
+    <ImageButton
+        android:id="@+id/btneolica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#FDFDFD"
+        android:contentDescription="@string/eolica"
+        android:onClick="janelaeolica"
+        app:layout_constraintBottom_toTopOf="@+id/imgvhome2"
+        app:layout_constraintEnd_toStartOf="@+id/btnhidreletrica"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsolar"
+        app:srcCompat="@drawable/eolica_btn" />
+
+    <ImageButton
+        android:id="@+id/btnoceanica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="49dp"
+        android:backgroundTint="#E91B21"
+        android:contentDescription="@string/oceanica"
+        android:onClick="janelaoceanica"
+        app:layout_constraintBottom_toTopOf="@+id/btnhidreletrica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnsolar"
+        app:layout_constraintTop_toBottomOf="@+id/imgvhome1"
+        app:srcCompat="@drawable/energia_oceanica_btn" />
+
+    <TextView
+        android:id="@+id/txtlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-180dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/pokeenergy"
+        android:textColor="#FB0404"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvhome1"
+        app:layout_constraintEnd_toEndOf="@+id/imgvhome1"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="@+id/imgvhome1"
+        app:layout_constraintTop_toTopOf="@+id/imgvhome1"
+        app:layout_constraintVertical_bias="0.758" />
+
+    <ImageView
+        android:id="@+id/imgvhome2"
+        android:layout_width="410dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-2dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="@string/barra_para_mensagem_de_escolha"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btneolica"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <TextView
+        android:id="@+id/txtescolha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/escolha_uma_das_energias_acima"
+        android:textColor="#F8F8F8"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvhome2"
+        app:layout_constraintEnd_toEndOf="@+id/imgvhome2"
+        app:layout_constraintHorizontal_bias="0.468"
+        app:layout_constraintStart_toStartOf="@+id/imgvhome2"
+        app:layout_constraintTop_toTopOf="@+id/imgvhome2"
+        app:layout_constraintVertical_bias="0.187" />
+
+    <ImageButton
+        android:id="@+id/btnhidreletrica"
+        android:layout_width="90dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="194dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#FDFDFD"
+        android:contentDescription="@string/hidreletrica"
+        android:onClick="janelahidreletrica"
+        app:layout_constraintBottom_toTopOf="@+id/imgvhome2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btneolica"
+        app:layout_constraintTop_toBottomOf="@+id/btnoceanica"
+        app:srcCompat="@drawable/hidroeletrica_btn" />
+
+    <ImageView
+        android:id="@+id/imgvlogo"
+        android:layout_width="107dp"
+        android:layout_height="126dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvhome1"
+        app:layout_constraintEnd_toEndOf="@+id/imgvhome1"
+        app:layout_constraintStart_toEndOf="@+id/txtlogo"
+        app:layout_constraintTop_toTopOf="@+id/imgvhome1"
+        app:srcCompat="@drawable/logo_pokeenergy"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageButton
+        android:id="@+id/btn_suporte"
+        android:layout_width="82dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#B88F8F"
+        android:contentDescription="@string/botao_para_activity_suporte"
+        android:onClick="janelasuporte"
+        app:layout_constraintBottom_toTopOf="@+id/txtlogo"
+        app:layout_constraintEnd_toStartOf="@+id/imgvlogo"
+        app:layout_constraintHorizontal_bias="0.202"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.432"
+        app:srcCompat="@android:drawable/ic_menu_help" />
+
+    <TextView
+        android:id="@+id/txtbuscapoke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/busca_pokemon"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.107"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtescolha"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <Button
+        android:id="@+id/btn_busca_poke"
+        android:layout_width="99dp"
+        android:layout_height="57dp"
+        android:backgroundTint="#6C6767"
+        android:onClick="buscapoke"
+        android:text="@string/veja_p"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtbuscapoke"
+        app:layout_constraintTop_toBottomOf="@+id/txtescolha" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

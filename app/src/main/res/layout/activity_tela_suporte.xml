@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:backgroundTint="#434A53"
+    tools:context=".tela_suporte">
+
+    <TextView
+        android:id="@+id/txtsuporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/suporte"
+        android:textColor="#E57373"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.049" />
+
+    <TextView
+        android:id="@+id/txtdescsuporte"
+        android:layout_width="367dp"
+        android:layout_height="63dp"
+        android:text="@string/alguns_sites_sobre_energias_renovaveis_que_podem_te_auxiliar"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtsuporte"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/txtsolarsuporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/energia_solar2"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdescsuporte"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/txteolicasuporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/energia_eolica"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtsolarsuporte"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <TextView
+        android:id="@+id/txthidrosuporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/energia_hidreletrica2"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txteolicasuporte"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <TextView
+        android:id="@+id/txtocesuporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/energia_oceanica2"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.098"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txthidrosuporte"
+        app:layout_constraintVertical_bias="0.255" />
+
+    <TextView
+        android:id="@+id/txtenersuporte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/energias_renovaveis"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtocesuporte"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <Button
+        android:id="@+id/btn_sup_solar"
+        android:layout_width="124dp"
+        android:layout_height="68dp"
+        android:backgroundTint="#FFEB3B"
+        android:onClick="sitesolar"
+        android:text="@string/veja_s"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.815"
+        app:layout_constraintStart_toEndOf="@+id/txtsolarsuporte"
+        app:layout_constraintTop_toBottomOf="@+id/txtdescsuporte"
+        app:layout_constraintVertical_bias="0.075" />
+
+    <Button
+        android:id="@+id/btn_sup_eolica"
+        android:layout_width="124dp"
+        android:layout_height="70dp"
+        android:backgroundTint="#716666"
+        android:onClick="siteeolica"
+        android:text="@string/veja_e"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintStart_toEndOf="@+id/txteolicasuporte"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sup_solar"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <Button
+        android:id="@+id/btn_sup_hidro"
+        android:layout_width="118dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#2196F3"
+        android:onClick="sitehidro"
+        android:text="@string/veja_h"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.341"
+        app:layout_constraintStart_toEndOf="@+id/txthidrosuporte"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sup_eolica"
+        app:layout_constraintVertical_bias="0.077" />
+
+    <Button
+        android:id="@+id/btn_sup_oce"
+        android:layout_width="120dp"
+        android:layout_height="72dp"
+        android:backgroundTint="#3F51B5"
+        android:onClick="siteocea"
+        android:text="@string/veja_o"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toEndOf="@+id/txtocesuporte"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sup_hidro"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <Button
+        android:id="@+id/btn_sup_reno"
+        android:layout_width="118dp"
+        android:layout_height="71dp"
+        android:backgroundTint="#FF0101"
+        android:onClick="sitereno"
+        android:text="@string/veja_r"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtenersuporte"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sup_oce"
+        app:layout_constraintVertical_bias="0.312" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

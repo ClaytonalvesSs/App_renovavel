@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    tools:context=".tela_hidreletrica">
+
+    <ImageView
+        android:id="@+id/imgvhidre1"
+        android:layout_width="411dp"
+        android:layout_height="163dp"
+        android:contentDescription="@string/barra_com_nome_da_energia_e_pokemon_hidre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <ImageView
+        android:id="@+id/imgvhidre2"
+        android:layout_width="411dp"
+        android:layout_height="297dp"
+        android:contentDescription="@string/barra_com_detalhes_da_energia_hidre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <ImageView
+        android:id="@+id/imgvenerhidre"
+        android:layout_width="347dp"
+        android:layout_height="250dp"
+        android:contentDescription="@string/imagem_energia_hidre"
+        app:layout_constraintBottom_toTopOf="@+id/imgvhidre2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvhidre1"
+        app:srcCompat="@drawable/energia_hidreletrica_imagem"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtnomehidre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/energia_hidreletrica"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvhidre1"
+        app:layout_constraintEnd_toEndOf="@+id/imgvhidre1"
+        app:layout_constraintHorizontal_bias="0.157"
+        app:layout_constraintStart_toStartOf="@+id/imgvhidre1"
+        app:layout_constraintTop_toTopOf="@+id/imgvhidre1"
+        app:layout_constraintVertical_bias="0.816" />
+
+    <TextView
+        android:id="@+id/txtdeschidre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/descri_o_ela_funciona_atrav_s_dos_movimentos_das_aguas_assim_na_usina_convertida_em_energia_el_trica"
+        android:textColor="#FBFBFB"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgvhidre2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgvhidre2"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <TextView
+        android:id="@+id/txtproshidre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pr_s_utiliza_um_recurso_renov_vel_emitem_um_nivel_menor_de_poluentes_atmosf_ricos"
+        android:textColor="#FAF7F7"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvhidre2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdeschidre"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/txtconhidre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contras_grande_impacto_no_meio_ambiente"
+        android:textColor="#FAF6F6"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvhidre2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtproshidre"
+        app:layout_constraintVertical_bias="0.109" />
+
+    <TextView
+        android:id="@+id/txtrankhidre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ranking_h"
+        android:textColor="#F8F5F5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtconhidre"
+        app:layout_constraintVertical_bias="0.477" />
+
+    <ImageView
+        android:id="@+id/imgvrankhidre"
+        android:layout_width="188dp"
+        android:layout_height="105dp"
+        android:contentDescription="@string/imagem_rank_hidre"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvhidre2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.135"
+        app:layout_constraintStart_toEndOf="@+id/txtrankhidre"
+        app:layout_constraintTop_toBottomOf="@+id/txtconhidre"
+        app:layout_constraintVertical_bias="0.466"
+        app:srcCompat="@drawable/quatro_estrelas" />
+
+    <ImageView
+        android:id="@+id/imgvpoke3"
+        android:layout_width="161dp"
+        android:layout_height="152dp"
+        android:contentDescription="@string/pokemon3"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvhidre1"
+        app:layout_constraintEnd_toEndOf="@+id/imgvhidre1"
+        app:layout_constraintStart_toEndOf="@+id/txtnomehidre"
+        app:layout_constraintTop_toTopOf="@+id/imgvhidre1"
+        app:srcCompat="@drawable/squirtle" />
+
+    <ImageButton
+        android:id="@+id/btnvoltar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/terceiro_botao_para_voltar_ao_menu"
+        android:onClick="voltarmenu2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgvrankhidre"
+        app:layout_constraintTop_toTopOf="@+id/imgvrankhidre"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/txt_local_hidro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/localiza_o_hidro"
+        android:textColor="#2196F3"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtnomehidre"
+        app:layout_constraintEnd_toStartOf="@+id/imgvpoke3"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <ImageButton
+        android:id="@+id/btn_mapa_hidro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#2196F3"
+        android:contentDescription="@string/botao_que_mostra_a_localizacao_de_uma_usina_hidreletrica"
+        android:onClick="mapahidro"
+        app:layout_constraintBottom_toTopOf="@+id/txtnomehidre"
+        app:layout_constraintEnd_toStartOf="@+id/imgvpoke3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txt_local_hidro"
+        app:layout_constraintTop_toTopOf="@+id/imgvhidre1"
+        app:layout_constraintVertical_bias="0.944"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+</androidx.constraintlayout.widget.ConstraintLayout>

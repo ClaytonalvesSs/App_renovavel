@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3F51B5"
+    tools:context=".tela_oceanica">
+
+    <ImageView
+        android:id="@+id/txtoce1"
+        android:layout_width="411dp"
+        android:layout_height="118dp"
+        android:contentDescription="@string/barra_com_nome_e_pokemon_oce"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <ImageView
+        android:id="@+id/txtoce2"
+        android:layout_width="411dp"
+        android:layout_height="328dp"
+        android:contentDescription="@string/barra_com_detalhes_da_energia_oce"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtoce1"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <ImageView
+        android:id="@+id/imgveneroce"
+        android:layout_width="291dp"
+        android:layout_height="218dp"
+        android:contentDescription="@string/imagem_energia_oce"
+        app:layout_constraintBottom_toTopOf="@+id/txtoce2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtoce1"
+        app:srcCompat="@drawable/energia_oceanica_imagem"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/txtnomeoce1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/energia_oce_nica"
+        android:textColor="#3F51B5"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtoce1"
+        app:layout_constraintEnd_toEndOf="@+id/txtoce1"
+        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintStart_toStartOf="@+id/txtoce1"
+        app:layout_constraintTop_toTopOf="@+id/txtoce1"
+        app:layout_constraintVertical_bias="0.883" />
+
+    <TextView
+        android:id="@+id/txtdescoce"
+        android:layout_width="411dp"
+        android:layout_height="56dp"
+        android:text="@string/descri_o_ele_gera_energia_atrav_s_das_mar_s_dos_oceanos"
+        android:textColor="#FFF8F8"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtoce2"
+        app:layout_constraintTop_toTopOf="@+id/txtoce2"
+        app:layout_constraintVertical_bias="0.051"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtprosoce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pr_s_energia_renov_vel_baixo_nivel_de_polui_o_das_guas"
+        android:textColor="#FAF6F6"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdescoce"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/txtconsoce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contras_custo_muito_elevado_necessita_de_reas_bastante_espec_ficas"
+        android:textColor="#F8F5F5"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtprosoce"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <TextView
+        android:id="@+id/txtrankoce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ranking_o"
+        android:textColor="#FBFBFB"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtoce2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtconsoce"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <ImageView
+        android:id="@+id/imgvrankoce"
+        android:layout_width="181dp"
+        android:layout_height="63dp"
+        android:contentDescription="@string/imagem_rank_oce"
+        app:layout_constraintBottom_toBottomOf="@+id/txtoce2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.184"
+        app:layout_constraintStart_toEndOf="@+id/txtrankoce"
+        app:layout_constraintTop_toBottomOf="@+id/txtconsoce"
+        app:layout_constraintVertical_bias="0.511"
+        app:srcCompat="@drawable/quatro_estrelas" />
+
+    <ImageView
+        android:id="@+id/imgvpoke4"
+        android:layout_width="124dp"
+        android:layout_height="114dp"
+        android:contentDescription="@string/pokemon4"
+        app:layout_constraintBottom_toBottomOf="@+id/txtoce1"
+        app:layout_constraintEnd_toEndOf="@+id/txtoce1"
+        app:layout_constraintStart_toEndOf="@+id/txtnomeoce1"
+        app:layout_constraintTop_toTopOf="@+id/txtoce1"
+        app:srcCompat="@drawable/pokemon3" />
+
+    <ImageButton
+        android:id="@+id/btnvoltar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/quarto_botao_para_voltar_ao_menu"
+        android:onClick="voltarmenu2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgvrankoce"
+        app:layout_constraintTop_toBottomOf="@+id/txtconsoce"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/txt_local_oce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/localiza_o_oce"
+        android:textColor="#651FFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtnomeoce1"
+        app:layout_constraintEnd_toStartOf="@+id/imgvpoke4"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintStart_toStartOf="@+id/txtoce1"
+        app:layout_constraintTop_toTopOf="@+id/txtoce1"
+        app:layout_constraintVertical_bias="0.574" />
+
+    <ImageButton
+        android:id="@+id/btn_local_oce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#673AB7"
+        android:contentDescription="@string/botao_que_mostra_a_localizacao_de_uma_usina_oceanica"
+        android:onClick="mapaocean"
+        app:layout_constraintBottom_toTopOf="@+id/txtnomeoce1"
+        app:layout_constraintEnd_toStartOf="@+id/imgvpoke4"
+        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintStart_toEndOf="@+id/txt_local_oce"
+        app:layout_constraintTop_toTopOf="@+id/txtoce1"
+        app:layout_constraintVertical_bias="0.64"
+        app:srcCompat="@android:drawable/ic_dialog_map" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

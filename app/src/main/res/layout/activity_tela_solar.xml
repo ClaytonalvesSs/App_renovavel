@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_background"
+    android:backgroundTint="#FFC107"
+    tools:context=".tela_solar">
+
+    <ImageView
+        android:id="@+id/imgvsolar1"
+        android:layout_width="412dp"
+        android:layout_height="137dp"
+        android:layout_marginBottom="17dp"
+        android:contentDescription="@string/barra_para_nome_da_energia_e_pokemon"
+        app:layout_constraintBottom_toTopOf="@+id/imgvenersolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <TextView
+        android:id="@+id/txtsolarnome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/energia_solar"
+        android:textColor="#FFEB3B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/imgvsolar1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <ImageView
+        android:id="@+id/imgvsolar2"
+        android:layout_width="413dp"
+        android:layout_height="299dp"
+        android:contentDescription="@string/barra_para_detalher_sobre_a_energia_solar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvenersolar"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <TextView
+        android:id="@+id/txtdescsolar"
+        android:layout_width="372dp"
+        android:layout_height="75dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/descri_o_energia_que_funciona_de_forma_limpa_sem_causar_graves_agress_es_ao_meio_ambiente_seu_mecanismo_funciona_atrav_s_da_absor_o_dos_raios_solares_trensformando_em_energia_el_trica"
+        android:textColor="#FFFCFC"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtprossolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvenersolar"
+        tools:ignore="TextSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imgvenersolar"
+        android:layout_width="329dp"
+        android:layout_height="226dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="25dp"
+        android:contentDescription="@string/imagem_ener_solar"
+        app:layout_constraintBottom_toTopOf="@+id/imgvsolar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.458"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvsolar1"
+        app:srcCompat="@drawable/energia_solar_imagem" />
+
+    <TextView
+        android:id="@+id/txtprossolar"
+        android:layout_width="374dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="200dp"
+        android:text="@string/pr_s_ocupa_pouco_espa_o_n_o_emite_poluentes_renov_vel"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtconsolar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvsolar2"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtconsolar"
+        android:layout_width="375dp"
+        android:layout_height="39dp"
+        android:layout_marginBottom="260dp"
+        android:text="@string/contras_custo_elevado_depend_ncia_clim_tica_capacidade_de_armazenamento_baixa"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvsolar2"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/txtranksolar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ranking"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvsolar2"
+        app:layout_constraintEnd_toStartOf="@+id/imgvranksolar"
+        app:layout_constraintHorizontal_bias="0.358"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtconsolar"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <ImageView
+        android:id="@+id/imgvranksolar"
+        android:layout_width="184dp"
+        android:layout_height="61dp"
+        android:contentDescription="@string/classifica_o_da_energia_solar"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvsolar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintStart_toStartOf="@+id/txtconsolar"
+        app:layout_constraintTop_toBottomOf="@+id/txtconsolar"
+        app:layout_constraintVertical_bias="0.555"
+        app:srcCompat="@drawable/quatro_estrelas_e_meia" />
+
+    <ImageView
+        android:id="@+id/imgvpoke1"
+        android:layout_width="109dp"
+        android:layout_height="104dp"
+        android:contentDescription="@string/pokemon_1"
+        app:layout_constraintBottom_toBottomOf="@+id/imgvsolar1"
+        app:layout_constraintEnd_toEndOf="@+id/imgvsolar1"
+        app:layout_constraintHorizontal_bias="0.68"
+        app:layout_constraintStart_toEndOf="@+id/txtsolarnome"
+        app:layout_constraintTop_toTopOf="@+id/imgvsolar1"
+        app:layout_constraintVertical_bias="0.583"
+        app:srcCompat="@drawable/charmander" />
+
+    <ImageButton
+        android:id="@+id/btnvoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/primeiro_botao_de_voltar"
+        android:onClick="voltarmenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtconsolar"
+        app:layout_constraintStart_toEndOf="@+id/imgvranksolar"
+        app:layout_constraintTop_toBottomOf="@+id/txtconsolar"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <ImageButton
+        android:id="@+id/btn_mapa_solar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:contentDescription="@string/botao_que_mostra_localizacao_de_uma_usina_solar"
+        android:onClick="mapasolar"
+        app:layout_constraintBottom_toTopOf="@+id/txtsolarnome"
+        app:layout_constraintEnd_toStartOf="@+id/imgvpoke1"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="@+id/imgvsolar1"
+        app:layout_constraintTop_toTopOf="@+id/imgvsolar1"
+        app:layout_constraintVertical_bias="0.4"
+        app:srcCompat="@android:drawable/ic_dialog_map"
+        app:tint="#000000" />
+
+    <TextView
+        android:id="@+id/txt_local_solar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/localiza_o"
+        android:textColor="#FFEB3B"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtsolarnome"
+        app:layout_constraintEnd_toStartOf="@+id/btn_mapa_solar"
+        app:layout_constraintStart_toStartOf="@+id/imgvsolar1"
+        app:layout_constraintTop_toTopOf="@+id/imgvsolar1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

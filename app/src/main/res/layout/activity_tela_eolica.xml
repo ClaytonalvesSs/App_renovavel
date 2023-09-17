@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#777575"
+    tools:context=".tela_eolica">
+
+    <ImageView
+        android:id="@+id/imgveolica1"
+        android:layout_width="414dp"
+        android:layout_height="125dp"
+        android:layout_marginBottom="608dp"
+        android:contentDescription="@string/barra_para_nome_da_energia_e_pokemon_eolica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <TextView
+        android:id="@+id/txtnomeeolica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-180dp"
+        android:text="@string/energia_e_lica"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgveolica1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.514"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgveolica1"
+        app:layout_constraintVertical_bias="0.855" />
+
+    <ImageView
+        android:id="@+id/imgvenereolica"
+        android:layout_width="392dp"
+        android:layout_height="221dp"
+        android:layout_marginTop="-280dp"
+        android:layout_marginBottom="50dp"
+        android:contentDescription="@string/imagem_da_energia_eolica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgveolica1"
+        app:srcCompat="@drawable/energia_eolica_imagem"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imgveolica2"
+        android:layout_width="413dp"
+        android:layout_height="308dp"
+        android:contentDescription="@string/barra_com_detalhes_da_energia_eolica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgvenereolica"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@android:drawable/screen_background_dark" />
+
+    <TextView
+        android:id="@+id/txtdesceolica"
+        android:layout_width="401dp"
+        android:layout_height="64dp"
+        android:text="@string/descri_o_s_o_cata_ventos_gigantes_que_s_o_movidos_pela_for_a_do_vento_assim_fazendo_a_convers_o_desse_movimento_em_energia_el_trica"
+        android:textColor="#EDE9E9"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imgveolica2"
+        app:layout_constraintHorizontal_bias="0.909"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgveolica2"
+        app:layout_constraintVertical_bias="0.046" />
+
+    <TextView
+        android:id="@+id/txtproseolica"
+        android:layout_width="381dp"
+        android:layout_height="36dp"
+        android:text="@string/pr_s_renov_vel_n_o_emite_gases_poluentes_diminui_a_emiss_o_de_gases_do_efeito_estufa"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgveolica2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtdesceolica"
+        app:layout_constraintVertical_bias="0.11" />
+
+    <TextView
+        android:id="@+id/txtconeolica"
+        android:layout_width="383dp"
+        android:layout_height="54dp"
+        android:text="@string/contras_nem_sempre_o_vento_sopra_quando_necess_rio_impacto_visual_gera_o_de_ru_do_constante"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgveolica2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.357"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtproseolica"
+        app:layout_constraintVertical_bias="0.267" />
+
+    <TextView
+        android:id="@+id/txtrankeolica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ranking_e"
+        android:textColor="#FAF6F6"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtconeolica"
+        app:layout_constraintVertical_bias="0.405" />
+
+    <ImageView
+        android:id="@+id/imgvrankeolica"
+        android:layout_width="172dp"
+        android:layout_height="68dp"
+        android:contentDescription="@string/imagem_rank_eolica"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/txtrankeolica"
+        app:layout_constraintTop_toBottomOf="@+id/txtconeolica"
+        app:layout_constraintVertical_bias="0.157"
+        app:srcCompat="@drawable/quatro_estrelas" />
+
+    <ImageView
+        android:id="@+id/imgvpoke2"
+        android:layout_width="157dp"
+        android:layout_height="123dp"
+        android:contentDescription="@string/pokemon2"
+        app:layout_constraintBottom_toBottomOf="@+id/imgveolica1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtnomeeolica"
+        app:layout_constraintTop_toTopOf="@+id/imgveolica1"
+        app:srcCompat="@drawable/pokemon_tipo_voador" />
+
+    <ImageButton
+        android:id="@+id/btnvoltar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/segundo_botao_para_voltar_ao_menu"
+        android:onClick="voltarmenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgvrankeolica"
+        app:layout_constraintTop_toBottomOf="@+id/txtconeolica"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/txt_local_eolica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/localiza_o_eolica"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/txtnomeeolica"
+        app:layout_constraintEnd_toStartOf="@+id/imgvpoke2"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgveolica1"
+        app:layout_constraintVertical_bias="0.466" />
+
+    <ImageButton
+        android:id="@+id/btn_mapa_eolica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/botao_que_mostra_a_localiza_o_de_uma_usina_eolica"
+        android:onClick="mapaeolica"
+        app:layout_constraintBottom_toTopOf="@+id/txtnomeeolica"
+        app:layout_constraintEnd_toStartOf="@+id/imgvpoke2"
+        app:layout_constraintHorizontal_bias="0.263"
+        app:layout_constraintStart_toEndOf="@+id/txt_local_eolica"
+        app:layout_constraintTop_toTopOf="@+id/imgveolica1"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@android:drawable/ic_dialog_map"
+        app:tint="#000000" />
+</androidx.constraintlayout.widget.ConstraintLayout>
