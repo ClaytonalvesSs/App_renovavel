@@ -28,7 +28,11 @@ Ao clicar no app, iremos fazer uma "intro" de 3 segundos mais ou menos, exibindo
 
 Após essa intro, iria aparecer uma activity, com um campo de login, que seria Nome de usuário e Senha que iremos utilizar duas TextViews para indicar ao usuário onde inserir os dados e duas EditTexts que são campos para o usuário inserir o nome de usuário e senha. Ainda nesta activity iremos colocar um Button enviar e ao clicar ele te  redirecionaria para a activity das 4 energias renováveis, aparecendo uma mensagem escrita "login efetudo com sucesso!".
 
+# Ideia do menu lateral (cancelada)
 Na activity das energias, vamos adicionar um button que vai chamar um menu lateral, no qual ele exibirá algumas opções, como por exemplo, "Sair" que ao clicar,  vai sair do usuário cadastrado, redirecionando de volta para a tela de login e o "Suporte" no qual iria redirecionar para uma nova activity com algumas dúvidas frequentes já respondidas (conjunto de TextViews) sobre energia renovável.
+
+# Ideia que vamos por no lugar do menu
+Na Main, iremos adicionar um button que fara uma busca no navegador de sua preferencia sobre "O que são Pokemosns?" para aquelas pessoas que não sabem oq são e possam entender um pouco mais sobre o tema do desenho escolhido pra mesclar com energias renováveis. Também iremos adicionar um Button na Main que levará a activity suporte, no qual terá 5 buttons, que levarão a 5 sites (cada um falando sobre um tipo de energia), em cada activity das energias, terá um button levando a uma localização, exemplo, na activity da energia solar, terá um button que mostrará uma localização que tem esse tipo de energia (nessa ideia, possui 3 tipos de Intent Implicita, de busca, de localização e de abrir site na web).
 
 Atualização:
 Adicionamos a imagem do Diagrama de Classes e sua explicação logo abaixo:
@@ -51,3 +55,6 @@ Na classe TpEnergias iriamos cadastrar, atualizar e consultar as informações.
 
 E na classe Suporte seria uma forma de consulta para o usuário.
 
+# VIDEO DO APP FUNCIONANDO (também tem no link do repositorio acima)
+
+https://youtu.be/fdxlIurX24U?si=kudCnNpx3CmZI2MX
