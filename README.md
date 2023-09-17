@@ -56,6 +56,6 @@ Na classe TpEnergias iriamos cadastrar, atualizar e consultar as informações.
 
 E na classe Suporte seria uma forma de consulta para o usuário.
 
-# VIDEO DO APP FUNCIONANDO (também tem no link do repositorio acima)
+# VIDEO DO APP FUNCIONANDO
 
 https://youtu.be/fdxlIurX24U?si=kudCnNpx3CmZI2MX
