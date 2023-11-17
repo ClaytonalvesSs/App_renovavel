@@ -47,8 +47,20 @@ public class tela_eolica extends AppCompatActivity {
         if(magnitude> 3){
             //iniciando a animação de rotação
             ObjectAnimator rotate = ObjectAnimator.ofFloat(imageView,"rotation", Of, 180f);
-            rotate.setDuration(1000);
+            rotate.setDuration(1000); //ajustar conforme seja necessario
+            rotate.start();
+
+            imageView.setImageResource(R.drawable.fletchinder);
         }
+    }
+
+    @Override public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
+    }
+
+    @Override protected void onDestroy(){
+        super.onDestroy();
+        sensorManager.unregisterListener(this);
     }
 
     public void voltarmenu(View view){
