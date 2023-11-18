@@ -9,19 +9,26 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class tela_solar extends AppCompatActivity implements SensorEventListener {
 
     private ImageView imageView;
     private Sensor sensor;
     private SensorManager sensorManager;
+
+    private Toast toast;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_solar);
         imageView = findViewById(R.id.imgvpoke1);
+
+        exibirToast();
 
         // inicializando o SensorManeger e o acelerômetro
         sensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
@@ -42,6 +49,17 @@ public class tela_solar extends AppCompatActivity implements SensorEventListener
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
 
+    }
+
+    private void exibirToast() {
+
+        toast = Toast.makeText(getApplicationContext(), "Balance seu dispositivo para evoluir o pokémon", Toast.LENGTH_LONG);
+
+        // Opcional: Personalize a posição do Toast (por exemplo, centralizado)
+        toast.setGravity(Gravity.CENTER, 0, 0);
+
+        // Exiba o Toast
+        toast.show();
     }
 
     public void voltarmenu(View view){
