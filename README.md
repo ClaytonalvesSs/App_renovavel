@@ -81,11 +81,11 @@ Esse método se baseia no eixo x, no caso se o valor de aceleração for maior q
 # Método onAccurancyChanged
 ![image](https://github.com/ClaytonalvesSs/App_renovavel/assets/128047894/47df1d59-33d2-446d-a1e8-53a32d2819a0)
 
-Esse método define uma ação que será feita caso a precisão do sensor mude, porém como o noos está vazio, ele não realizará nada
+Esse método define uma ação que será feita caso a precisão do sensor mude, porém como o nosso está vazio, ele não realizará nada.
 
 # Método exibirToast
 ![image](https://github.com/ClaytonalvesSs/App_renovavel/assets/128047894/652956f8-ba9d-42b1-844b-0f80f4c8fbc9)
 
-Ele apresenta uma mensagem toast, no qual aparecerá quando o usuário entrar na activity de uma das energias, falando para ele balançar o celular
+Ele apresenta uma mensagem toast, no qual aparecerá quando o usuário entrar na activity de uma das energias, indicando que ele balançe o celular para que a imagem mude.
 
 # VIDEO DO TESTE DO SENSOR
