@@ -59,3 +59,33 @@ E na classe Suporte seria uma forma de consulta para o usuário.
 # VIDEO DO APP FUNCIONANDO
 
 https://youtu.be/fdxlIurX24U?si=kudCnNpx3CmZI2MX
+
+# Implementação de sensor no aplicativo
+Após uma breve discussão sobre qual sensor utilizar, a Evelyn sugeriu que usassemos um sensor de movimento, no qual ao balançar o celular, o pokémon mudaria de imagem para a de uma versão superior de si, dando a impressão de que ele estivesse "evoluído". E também adicionamos uma mensagem Toast para avisar o usuário que se ele balançar o celular, a imagem mudaria. decidimos fazer esses códigos nas quatro Activities de energia e Com isso, iniciamos a elaboração do codigo nessa sexta-feira (17 de novembro) e ele foi finalizado na tarde do dia seguinte, agora, veja a explicação do código logo abaixo:
+
+# Declaraçao de variáveis 
+![image](https://github.com/ClaytonalvesSs/App_renovavel/assets/128047894/99666f7e-2608-4077-af1a-76753a43eaf5)
+
+Declaramos algumas variáveis para o sensor uma para a mensagem toast e tambem uma para mudar a image view.
+
+# Método OnCreate
+![image](https://github.com/ClaytonalvesSs/App_renovavel/assets/128047894/e4648e84-88a7-4d31-ac38-35a627a471a8)
+
+Iniciamos oSensorManager no qual gerecia o sensor, o acelerometro em si e o ouvinte, que seria a parte que gerencia o tempo de resposta da ação que o sensor realiza.
+
+# Método onSensorChanged
+![image](https://github.com/ClaytonalvesSs/App_renovavel/assets/128047894/2af6969b-a6e9-4da3-a240-70fd5fb4ecfe)
+
+Esse método se baseia no eixo x, no caso se o valor de aceleração for maior que 15, ele trocará a imagem básica pela imagem do pokémon evoluído.
+
+# Método onAccurancyChanged
+![image](https://github.com/ClaytonalvesSs/App_renovavel/assets/128047894/47df1d59-33d2-446d-a1e8-53a32d2819a0)
+
+Esse método define uma ação que será feita caso a precisão do sensor mude, porém como o noos está vazio, ele não realizará nada
+
+# Método exibirToast
+![image](https://github.com/ClaytonalvesSs/App_renovavel/assets/128047894/652956f8-ba9d-42b1-844b-0f80f4c8fbc9)
+
+Ele apresenta uma mensagem toast, no qual aparecerá quando o usuário entrar na activity de uma das energias, falando para ele balançar o celular
+
+# VIDEO DO TESTE DO SENSOR
