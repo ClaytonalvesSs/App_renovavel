@@ -63,7 +63,7 @@ https://youtu.be/fdxlIurX24U?si=kudCnNpx3CmZI2MX
 # Implementação de sensor no aplicativo
 Após uma breve discussão sobre qual sensor utilizar, a Evelyn sugeriu que usassemos um sensor de movimento, no qual ao balançar o celular, o pokémon mudaria de imagem para a de uma versão superior de si, dando a impressão de que ele estivesse "evoluído". E também adicionamos uma mensagem Toast para avisar o usuário que se ele balançar o celular, a imagem mudaria. decidimos fazer esses códigos nas quatro Activities de energia e Com isso, iniciamos a elaboração do codigo nessa sexta-feira (17 de novembro) e ele foi finalizado na tarde do dia seguinte, agora, veja a explicação do código logo abaixo:
 
-# Declaraçao de variáveis 
+# Declaração de variáveis 
 ![image](https://github.com/ClaytonalvesSs/App_renovavel/assets/128047894/99666f7e-2608-4077-af1a-76753a43eaf5)
 
 Declaramos algumas variáveis para o sensor uma para a mensagem toast e tambem uma para mudar a image view.
@@ -89,3 +89,5 @@ Esse método define uma ação que será feita caso a precisão do sensor mude, 
 Ele apresenta uma mensagem toast, no qual aparecerá quando o usuário entrar na activity de uma das energias, indicando que ele balançe o celular para que a imagem mude.
 
 # VIDEO DO TESTE DO SENSOR
+
+https://youtube.com/shorts/qe_KgErr3BU?si=NSo7g0JR7N4JAiCR
