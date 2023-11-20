@@ -78,7 +78,7 @@ Iniciamos oSensorManager no qual gerecia o sensor, o acelerometro em si e o ouvi
 
 Esse método se baseia no eixo x, no caso se o valor de aceleração for maior que 15, ele trocará a imagem básica pela imagem do pokémon evoluído.
 
-# Método onAccurancyChanged
+# Método onAccuracyChanged
 ![image](https://github.com/ClaytonalvesSs/App_renovavel/assets/128047894/47df1d59-33d2-446d-a1e8-53a32d2819a0)
 
 Esse método define uma ação que será feita caso a precisão do sensor mude, porém como o nosso está vazio, ele não realizará nada.
