@@ -1,9 +1,8 @@
 # App_renovavel
 ## Repositório com arquivo do app sobre energia renovável e pokémon
 
-Nova dupla: Clayton Alves e Evelyn Karina
+Feito por: Clayton Alves e Evelyn Karina
 
-Feito por: Clayton Alves e Guilherme Gasperini
 
 O app desenvolvido cujo seu tema é sobre energia renovável mesclado com o tema de pokemon.
 Primeiramente utilizamos o canva para elaborar a interface do projeto.
